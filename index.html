@@ -2,7 +2,32 @@
 <html>
 <head>
   <meta charset="utf-8">
-  
+  <html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JoJo的奇妙冒險 | Hexo</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        #title {
+            position: relative;
+            left: -100%; /* 初始位置在畫面外 */
+            font-size: 2em;
+            opacity: 0; /* 初始透明度 */
+            transition: opacity 1s ease; /* 過渡效果 */
+        }
+    </style>
+</head>
+<body>
+    <h1 id="title">JoJo的奇妙冒險 | Hexo</h1>
+
+    <script>
+        $(document).ready(function() {
+            $('#title').animate({ left: '0', opacity: 1 }, 1000); // 滑動進來並顯示
+        });
+    </script>
+</body>
+</html>
   
   <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
