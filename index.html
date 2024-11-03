@@ -1,4 +1,26 @@
 <!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>改變標題顏色</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        #title {
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="title">JoJo的奇妙冒險 | Hexo</h1>
+
+    <script>
+        $(document).ready(function() {
+            $('#title').css('color', 'red');
+        });
+    </script>
+</body>
+</html>
 
   <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
