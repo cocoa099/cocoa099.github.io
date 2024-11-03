@@ -8,19 +8,19 @@
     <style>
         #title {
             position: relative;
-            left: -100%; /* 初始位置在畫面外 */
+            left: -100%;
             font-size: 2em;
-            opacity: 0; /* 初始透明度 */
-            transition: opacity 1s ease; /* 過渡效果 */
+            opacity: 0;
+            transition: opacity 1s ease;
         }
     </style>
 </head>
 <body>
-    <h1 id="title">這是逐漸浮現並滑入的標題</h1>
+    <h1 id="title">JoJo的奇妙冒險 | Hexo</h1>
 
     <script>
         $(document).ready(function() {
-            $('#title').animate({ left: '0', opacity: 1 }, 1000); // 滑動進來並顯示
+            $('#title').animate({ left: '0', opacity: 1 }, 1000);
         });
     </script>
 </body>
